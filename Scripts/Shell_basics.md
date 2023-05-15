@@ -51,3 +51,30 @@ PowerShell also provides many aliases that can be used instead of the full cmdle
 - Select-Object Name,Status: Selects only the Name and Status properties of the filtered services using the Select-Object cmdlet. This command displays the names and statuses of all stopped services on the computer.
 
 ```Get-Service | Where-Object { $_.status -eq 'Stopped' } | Select-Object Name,Status```
+
+
+
+
+## PS verbs and parameters
+
+Verbs:
+
+This PowerShell command uses the Get-Help cmdlet to retrieve information about approved verbs that can be used in PowerShell cmdlet names.
+
+The get-verb parameter specifies that we want to get information about verbs.
+
+The | more pipeline operator is used to display the results one page at a time in the console, allowing the user to scroll through the results as needed.
+
+Overall, this command retrieves a list of approved verbs that can be used when naming custom cmdlets in PowerShell and displays them in a paginated format in the console.
+
+
+```Get-Help get-verb | more```
+
+
+Parameters:
+
+This PowerShell command uses the Get-Help cmdlet to retrieve information about the common parameters that can be used in PowerShell cmdlets.
+
+The about_CommonParameters parameter specifies that we want help documentation specifically about common parameters.
+
+By default, the Get-Help cmdlet displays the help content in the console window. However, you can also use the -Online parameter to view the documentation in a web browser or the -ShowWindow parameter to view the documentation in a separate window.
