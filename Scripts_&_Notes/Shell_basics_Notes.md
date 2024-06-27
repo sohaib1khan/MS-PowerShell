@@ -165,10 +165,17 @@ These three commands— `Get-Command`, `Get-Help`, and `Get-Member` are essentia
 
 
 
+###### Powershell Formatting
+
+`Format-List` cmdlet allows you to specify which properties of an object you want to display and formats the output as a list, showing each property on a separate line.
+
+For example:
+
+```Get-Process | Format-List Name, Id, CPU```
+In this example, we use the Get-Process cmdlet to retrieve a list of running processes. The output of this cmdlet contains various properties such as Name, Id, CPU usage, and more. By piping the output to Format-List and specifying the properties Name, Id, and CPU, the command formats the output in a list format, displaying each process's name, ID, and CPU usage on separate lines.
 
 
-
-
+The Format-List cmdlet is useful when you want to view detailed information about specific properties of objects, particularly when dealing with complex or multi-property objects. It provides a more readable and structured view of the object's properties and their values.
 
 
 
