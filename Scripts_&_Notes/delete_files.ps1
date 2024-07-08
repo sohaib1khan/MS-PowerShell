@@ -1,5 +1,8 @@
-# Define the variable list
-$items = @("item1", "item2", "item3")
+# Path to the inventory file
+$inventoryFile = "C:\path\to\inventory.txt"
+
+# Read the items from the file into an array
+$items = Get-Content -Path $inventoryFile
 
 # Loop through each item in the list
 foreach ($item in $items) {
